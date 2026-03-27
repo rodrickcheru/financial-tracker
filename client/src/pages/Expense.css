@@ -1,0 +1,114 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-text h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.add-btn-reference {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.t-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.t-item {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f1f5f9;
+}
+
+.t-icon-box {
+  background: #f5f3ff;
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+.t-info { margin-left: 15px; }
+.t-name { font-weight: 700; color: #1e293b; }
+.t-date { font-size: 12px; color: #94a3b8; }
+
+.t-amount-tag {
+  margin-left: auto;
+  color: #ef4444;
+  font-weight: 700;
+  background: #fff1f2;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  width: 400px;
+}
+
+.form-group { margin-bottom: 15px; }
+.form-group input {
+  width: 100%; padding: 12px;
+  border-radius: 10px; border: 1px solid #e2e8f0;
+}
+
+.save-expense-btn {
+  width: 100%; background: #7c3aed; color: white;
+  padding: 14px; border: none; border-radius: 12px; cursor: pointer;
+}
